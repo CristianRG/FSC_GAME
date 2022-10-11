@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles-index.css')}}">
+<article>
+    <section>
+        <div class="header-game">
+            <div class="category">
+                <p>category</p>
+            </div>
+            <div class="question">
+                <p>question</p>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/4284/4284490.png" alt="" class="image">
+        </div>
+        <div class="btn" id="btn1">
+            <p>Opcion 1</p>
+        </div>
+        <div class="btn" id="btn2">
+            <p>Opcion 2</p>
+        </div>
+        <div class="btn" id="btn3">
+            <p>Opcion 3</p>
+        </div>
+        <div class="btn" id="btn4">
+            <p>Opcion 4</p>
+        </div>
+    </section>
+</article>
+<script>
+    
+</script>
+{% endblock %}

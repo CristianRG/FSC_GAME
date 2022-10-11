@@ -1,0 +1,51 @@
+* {
+    transition: all .3s;
+}
+
+.header-game {
+    background: white;
+    min-width: 400px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.header-game p{
+    background: white;
+    margin: auto;
+    padding: 5px;
+}
+
+.header-game:hover{
+    width: 71%;
+}
+
+.category {
+    text-align: left;
+
+}
+
+.image{
+    background: white;
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+}
+
+.btn {
+    background: white;
+    min-width: 300px;
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.btn p{
+    background: white;
+    padding: 5px;
+}
+
+.btn:hover{
+    width: 52%;
+}
