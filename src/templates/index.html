@@ -2,32 +2,35 @@
 
 {% block body %}
 <link rel="stylesheet" href="{{url_for('static', filename='css/styles-index.css')}}">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <article>
     <section>
         <div class="header-game">
             <div class="category">
-                <p>category</p>
+                <p id="categoryQ">category</p>
             </div>
             <div class="question">
-                <p>question</p>
+                <p id="questionQ">question</p>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/4284/4284490.png" alt="" class="image">
+            <img src="https://cdn-icons-png.flaticon.com/512/4284/4284490.png" alt="" class="image" id="imgJs">
         </div>
-        <div class="btn" id="btn1">
-            <p>Opcion 1</p>
+        <div class="btn" id="btn0" onclick="checkOption(0)">
+            Opcion 1
         </div>
-        <div class="btn" id="btn2">
-            <p>Opcion 2</p>
+        <div class="btn" id="btn1"onclick=" checkOption(1)">
+            Opcion 2
         </div>
-        <div class="btn" id="btn3">
-            <p>Opcion 3</p>
+        <div class="btn" id="btn2" onclick="checkOption(2)">
+            Opcion 3
         </div>
-        <div class="btn" id="btn4">
-            <p>Opcion 4</p>
+        <div class="btn" id="btn3" onclick="checkOption(3)">
+            Opcion 4
+        </div>
+        <div class="btn" id="btn-next" onclick="resetTargets()">
+            Siguiente
         </div>
     </section>
 </article>
-<script>
-    
-</script>
+<script src="{{url_for('static', filename='js/base-preguntas.js')}}"></script>
+<script defer src="{{url_for('static', filename='js/main.js')}}"></script>
 {% endblock %}
