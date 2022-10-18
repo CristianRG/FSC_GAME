@@ -65,6 +65,10 @@
     margin-bottom: 10px;
 }
 
+#btn-next:hover {
+    width: 21%;
+}
+
 .btn:hover{
     width: 52%;
     cursor: pointer;

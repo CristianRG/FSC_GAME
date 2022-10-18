@@ -17,4 +17,18 @@ let questions = [
         answer: "Cuidar y fomentar el cuidado del ambiente",
         img: "https://redcantabrarural.com/wp-content/uploads/ODS-MINI-13.jpg"
     },
+    {
+        category: "Producción y consumo responsable",
+        question: "En lo que respecta a los consumidores, los hogares consumen el 29% de la energía mundial y contribuyen al 21% de las emisiones de ___ resultantes.",
+        optiones: ["Monóxido de nitrógeno (NO2)","Metano (CH4)","Dióxido de azufre (SO2)"],
+        answer: "Dióxido de carbono (CO2)",
+        img: ""
+    },
+    {
+        category: "Producción y consumo responsable",
+        question: "¿Cómo puedo ayudar como consumidor?",
+        optiones: ["Reciclando","Reciclando y reutilizando","Dióxido de azufre (SO2)"],
+        answer: "Dióxido de carbono (CO2)",
+        img: ""
+    },
 ]
