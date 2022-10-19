@@ -1,8 +1,12 @@
 * {
     margin: 0%;
     padding: 0%;
-    background-image: url('https://cdn.wallpapersafari.com/77/20/B4RXPH.jpg');
+    /* background-image: url('https://cdn.wallpapersafari.com/77/20/B4RXPH.jpg'); */
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background: #302730;
 }
 
 .header-up {
@@ -11,7 +15,8 @@
     background: #1B5E20;
     padding-top: 10px;
     font-weight: bold;
-    margin-bottom: 6px;
+
+    /* margin-bottom: 6px; */
 }
 
 .logo-blog {
@@ -31,6 +36,7 @@
 }
 
 .container {
+    background-image: url('https://cdn.wallpapersafari.com/77/20/B4RXPH.jpg');
     width: 100vw;
     height: 63vh;
     display: inline-flex;
@@ -41,13 +47,14 @@
 
 .footer-bar {
     width: 100%;
+    height: 40px;
     color: white;
+    background: #302730;
 }
 
 .footer-bar p {
     padding: 10px;
-    margin-top: 10px;
-    height: 40px;
+    /* margin-top: 10px; */
     background: #302730;
     text-align: center;
 }

@@ -2,6 +2,14 @@
     transition: all .3s;
 }
 
+article {
+    background: none;
+}
+
+section {
+    background: none;
+}
+
 .header-game {
     background: white;
     min-width: 350px;
@@ -16,11 +24,9 @@
     margin: auto;
     padding: 5px;
     margin-top: 5px;
+    font-weight: normal;
 }
 
-.header-game:hover{
-    width: 71%;
-}
 
 .category {
     text-align: left;
@@ -39,6 +45,11 @@
     object-fit: cover;
     width: 200px;
     height: 100px;
+}
+
+.image:hover{
+    width: 300px;
+    height: 140px;
 }
 
 .btn {

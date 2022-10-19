@@ -1,5 +1,6 @@
 INDEX_ANSWER = 0;
 playerScore = 0;
+
 getQuestion(INDEX_ANSWER);
 
 function getQuestion(index) {
@@ -27,6 +28,15 @@ async function checkOption(index) {
         document.getElementById(`btn${index}`).style.background = "green";
         document.getElementById(`btn${index}`).style.color = "white";
         playerScore += 1;
+
+        await Swal.fire({
+            title: '¡Correcto!',
+            icon: 'success',
+            toast: true,
+            timer: 1500,
+            position: 'center-end'
+            // background: "#FFFFFF"
+        }); 
     }
     else {
         document.getElementById(`btn${index}`).style.background = "red";
@@ -41,6 +51,15 @@ async function checkOption(index) {
         document.getElementById(`btn${answer}`).style.background = "green";
         document.getElementById(`btn${answer}`).style.color = "white";
 
+        await Swal.fire({
+            title: '¡Incorrecto!',
+            icon: 'error',
+            toast: true,
+            timer: 1500,
+            position: 'center-end'
+            // background: "#FFFFFF"
+        }); 
+
         // document.getElementById(`btn${index}`).style.background = "green";
         // document.getElementById(`btn${index}`).style.color = "white";
     }
@@ -49,7 +68,17 @@ async function checkOption(index) {
     
 
     if(INDEX_ANSWER >= (questions.length)){
-        console.log(`Tu puntuaje fue de: ${playerScore}/${questions.length}`);
+        await Swal.fire({
+            title: '¡Juego terminado!',
+            icon: 'success',
+            backdrop: true,
+            // background: "#FFFFFF"
+            text: `Tu resultado fue de: ${playerScore}/${questions.length}`,
+            allowOutsideClick: false,
+            allowEscapeKey: true,
+            allowEnterKey: false
+        
+        }); 
         INDEX_ANSWER = 0;
         playerScore = 0;
     }
